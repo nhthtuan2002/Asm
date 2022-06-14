@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>AdminDashboard</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashboard</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+<!--    Category Router-->
+
+    <servlet>
+        <servlet-name>CreateCategory</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.category.CreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCategory</servlet-name>
+        <url-pattern>/admin/category/create</url-pattern>
+    </servlet-mapping>
+
+    <!--    Product Router-->
+
+    <servlet>
+        <servlet-name>CreateProduct</servlet-name>
+        <servlet-class>com.assignment.assignmentwcd.controller.admin.product.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateProduct</servlet-name>
+        <url-pattern>/admin/product/create</url-pattern>
+    </servlet-mapping>
+
+</web-app>
